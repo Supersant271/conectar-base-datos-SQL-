@@ -1,14 +1,14 @@
-using.MongoDb.Bson.serialization.Attributes;
+using MongoDB.Bson.Serialization.Attributes;
 
 public class SalonMongo {
     [BsonId]
-    [BsonRepresentation(MongoDb.Bson.BsonType.ObjecId)]
+    [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
     public string? Id { get; set; }
     public string Edificio { get; set; } = string.Empty;
     public string Nombre { get; set; } = string.Empty;
     public string Uso { get; set; } = string.Empty;
-    public decimal largo { get; set; }
-    public decimal anchoo { get; set; }
-    public int capacidad { get; set; }
+    public decimal Largo { get; set; }
+    public decimal Ancho { get; set; }
+    public int Capacidad { get; set; }
     public List<String>? Grupos { get; set; }
 }
